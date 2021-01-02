@@ -1,0 +1,152 @@
+
+/* 
+	@广西新闻网设计部 统一样式库
+	@文件名：base.css
+	@版本号：1.0
+	@更新日期：2014年1月14日
+*/
+
+/* 
+	@常用样式
+*/
+
+/* 基本字体和字体大小 */
+body { font-family: "宋体"; font-size: 12px; background-color: #fff; }
+/* 微软雅黑 */
+.MSYH { font-family: 微软雅黑; }
+/* 文本左对齐 */
+.text-left { text-align: left; }
+/* 文本居中对齐 */
+.text-center { text-align: center; }
+/* 文本右对齐 */
+.text-right { text-align: right; }
+/* 隐藏DIV等 */
+.hide { display: none; }
+.clear { clear: bth; }
+/* 常用加粗 */
+.bold { font-weight: bold; }
+/* 常用字体大小 */
+.fs12 { font-size: 12px; }
+.fs14 { font-size: 14px; }
+.fs16 { font-size: 16px; }
+.fs18 { font-size: 18px; }
+.fs20 { font-size: 20px; }
+.fs22 { font-size: 22px; }
+.fs24 { font-size: 24px; }
+.fs26 { font-size: 26px; }
+.fs28 { font-size: 28px; }
+.fs30 { font-size: 30px; }
+.fs32 { font-size: 32px; }
+.fs34 { font-size: 34px; }
+.fs36 { font-size: 36px; }
+/* 常用行距 */
+.lh20 { line-height: 20px; }
+.lh22 { line-height: 22px; }
+.lh24 { line-height: 24px; }
+.lh25 { line-height: 25px; }
+.lh26 { line-height: 26px; }
+.lh27 { line-height: 27px; }
+.lh28 { line-height: 28px; }
+.lh30 { line-height: 30px; }
+.lh31 { line-height: 31px; }
+.lh32 { line-height: 32px; }
+.lh33 { line-height: 33px; }
+.lh34 { line-height: 34px; }
+.lh35 { line-height: 35px; }
+.lh36 { line-height: 36px; }
+.lh37 { line-height: 37px; }
+.lh38 { line-height: 38px; }
+.lh39 { line-height: 39px; }
+.lh40 { line-height: 40px; }
+.lh50 { line-height: 50px; }
+.lh50 { line-height: 50px; }
+.lh80 { line-height: 80px; }
+.lh100 { line-height: 100px; }
+/* 统一链接样式 */
+a:link { color: #000; text-decoration: none }
+a:visited { color: #000; text-decoration: none }
+a:hover { color: #000; text-decoration: underline }
+/* 常用颜色，可根据自己实际需要修改颜色值 */
+.white { color: #FFF; }
+.white a { color: #FFF; }
+.black { color: #000; }
+.black a { color: #000; }
+.red { color: #b71111; }
+.red a { color: #b71111; }
+.gray { color: #262628; }
+.gray a { color: #262628; }
+.gray1 { color: #4d4d4b; }
+.gray1 a { color: #4d4d4b; }
+.gray2 { color: #232323; }
+.gray2 a { color: #232323; }
+.gray3 { color: #e6e6e6; }
+.gray3 a { color: #e6e6e6; }
+.orange { color: #ff6100; }
+.orange a { color: #ff6100; }
+.green { color: #0fac3b; }
+.green a { color: #0fac3b; }
+.green1 { color: #1ab048; }
+.green1 a { color: #1ab048; }
+.blue { color: #419dea; }
+.blue a { color: #419dea; }
+.yellow { color: #FFD24C; }
+.yellow a { color: #FFD24C; }
+/* 
+	@名称: base
+	@功能: 重设浏览器默认样式
+*/
+
+/* 防止用户自定义背景颜色对网页的影响 */
+html { color: #000; background: #fff; }
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; }
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+/* 要注意表单元素并不继承父级 font 的问题 */
+
+input, select, textarea { font-size: 100%; }
+/* 去掉各Table  cell 的边距并让其边重合 */
+table { border-collapse: collapse; border-spacing: 0; }
+/* IE bug fixed: th 不继承 text-align*/
+th { text-align: inherit; }
+/* 去除默认边框 */
+fieldset, img { border: 0; }
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe { display: block; }
+/* 去掉 firefox 下此元素的边框 */
+abbr, acronym { border: 0; font-variant: normal; }
+/* 一致的 del 样式 */
+del { text-decoration: line-through; }
+address, caption, cite, code, dfn, em, th, var { font-style: normal; font-weight: 500; }
+/* 去掉列表前的标识, li 会继承 */
+ol, ul { list-style: none; }
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th { text-align: left; }
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 500; }
+q:before, q:after { content: ''; }
+/* 统一上标和下标 */
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+/* 让链接在 hover 状态下显示下划线 */
+a:hover { text-decoration: underline; }
+/* 默认不显示下划线，保持页面简洁 */
+ins, a { text-decoration: none; }
+/* 清理浮动 */
+.fn-clear:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.fn-clear { zoom: 1; /* for IE6 IE7 */ }
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide { display: none; }
+/* 设置内联, 减少浮动带来的bug */
+.fn-left, .fn-right { display: inline; }
+.fn-left { float: left; }
+.fn-right { float: right; }
+.kongliangge { text-indent: 3em; }
+.gao5 { height: 5px; }
+.gao10 { height: 10px; }
+.gao15 { height: 15px; }
+.gao20 { height: 20px; }
+.gao25 { height: 25px; }
+.gao30 { height: 30px; }
+.gao80 { height: 80px; }
+.juzhong { margin: 0px auto; }
